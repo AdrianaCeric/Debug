@@ -14,8 +14,6 @@ This is where the Debug application comes into play. Using Debug, farmers are ab
 
 ## How we built it
 - HTML5
-- CSS3
-- Javascript
 - [p5.js](https://p5js.org/)
 - [ml5.js](https://ml5js.org/)
 - [Teachable Machine](https://teachablemachine.withgoogle.com/)

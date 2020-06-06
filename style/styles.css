@@ -15,6 +15,10 @@ body {
     color: red;
 }
 
+.container img {
+    width: 100%;
+}
+
 
 /* code for navbar */
 
@@ -147,7 +151,7 @@ input[type="file"] {
     margin-bottom: 30px;
 }
 
-.prediction-list {
+#prediction-list {
     font-size: 18px;
 }
 

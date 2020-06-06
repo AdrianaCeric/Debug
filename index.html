@@ -10,6 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
     <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="img/Favicon2.png">
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             min-height: 75rem;
@@ -35,8 +37,8 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="/index.html">Debug</a>
+    <nav class="navbar navbar-custom navbar-expand-md fixed-top ">
+        <a class="navbar-brand" href="index.html"><img src="img/DebugLogo.png" id="nav-logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -52,7 +54,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 upload-btn-wrapper">
                 <input id="image-selector" class="form-control border-0" type="file">
             </div>
             <div class="col-6">

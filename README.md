@@ -15,6 +15,7 @@ This is where the Debug application comes into play. Using Debug, farmers are ab
 - [Teachable Machine](https://teachablemachine.withgoogle.com/)
 - [ImageNet](http://www.image-net.org/index)
 - [Tensorflow.js](https://www.tensorflow.org/js)
+
 ## Challenges we ran into
 
 ## Accomplishments that we're proud of

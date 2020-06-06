@@ -10,15 +10,12 @@ $(function() {
         let file = $("#image-selector").prop('files')[0];
         reader.readAsDataURL(file);
     });
+    classifier = ml5.imageClassifier("put the link here", function() {
 
 
-
-
-    classifier = ml5.imageClassifier("put the teachable machine model link here", function() {
-
-        $(".progress").html("Attempting to classify...");
 
         $("#predict-button").click(function() {
+            $("#progress-text").html("<h5>Attempting to classify...</h5>");
             classifier.classify(document.getElementById("selected-image"), function(err, result) {
                 $(".progress").hide();
                 if (err) {

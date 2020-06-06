@@ -2,12 +2,20 @@
     width: 200px;
 }
 
-/* Modify the backgorund color */ 
-.navbar-custom { 
-    background-color: #5E8A2E; 
-} 
+body {
+    padding-top: 70px;
+    overflow-x: hidden;
+}
 
-h1, h2 {
+
+/* Modify the backgorund color */
+
+.navbar-custom {
+    background-color: #5E8A2E;
+}
+
+h1,
+h2 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: white;

@@ -10,6 +10,7 @@ $(function() {
         let file = $("#image-selector").prop('files')[0];
         reader.readAsDataURL(file);
     });
+
     classifier = ml5.imageClassifier("put the link here", function() {
 
 
@@ -41,15 +42,6 @@ $(function() {
             })
 
         })
-
-
-
-
-
-
-
-
-
 
     })
 

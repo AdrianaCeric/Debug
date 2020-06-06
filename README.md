@@ -1,14 +1,16 @@
 # Debug, a Pest-Classifier🐞
 ![GitHub Logo](img/DebugLogo.png)
 ## Inspiration
-Farmers rely heavily on crop yields as their main source of income. However, many pests can get in the way of optimal production yields as they can eat and harm the field crops. Pesticides are commonly used by many farmers in order to get rid of them. However, large quantities of pesticides can be expensive, and many times, farmers misuse pesticides on the wrong pests. The overuse of pesticides has many consequences **which can cost farmers money, time, and resources:**
--  First, the EPA estimates up to **70 million pounds of pesticides are lost to drift each year**, a common issue in which extra pesticide chemicals are carried by the wind, hurting the ecosystems, the farmer's wallet, and human health.
+Farmers rely heavily on crop yields as their main source of income. However, many pests can get in the way of optimal production yields as they can eat and harm the field crops. Pesticides are commonly used by many farmers to get rid of them. Despite that, the large quantities of pesticides used to spray on acres of farmland can be expensive, and many times, farmers misuse pesticides on the wrong bugs. The overuse of pesticides has many consequences which can cost farmers money, time, and resources:
+
+- First, the EPA estimates up to **70 million pounds of pesticides are lost to drift each year**, a common issue in which extra pesticide chemicals are carried by the wind, hurting the ecosystems, the farmer's wallet, and human health.
 - Second, an overabundance of pesticides on the wrong species can lead to **pesticide resistance**. As a result, pesticide costs should be expected to increase as new variations of the pesticide are more expensive. 
 - Third, **spraying pesticides on beneficial pests** can negatively impact the production rate of the farmer's crops, which is a waste of money. 
 
-
+These effects worsen each year, causing rural/small farmers to lose thousands of dollars, as on average, they spend around $21,000 on pesticides alone as of 2019. This number will only increase in the coming years. 
+ 
 ## What it does
-This is where the Debug application comes into play. Using Debug, farmers are able to upload a picture of a recurrent pest they observe in their fields. Once uploaded, they are provided with a brief summary on whether the pest is harmful or not, and some potential pesticides they could use. This way, the farmers will be able to save a substantial amount of money, closing into hundreds or even thousands of dollars per year. 
+This is where the Debug application comes into play. Using Debug, farmers are able to upload a picture of a recurrent bug they observe in their fields. Once uploaded, they are provided with a brief summary of the pest and whether it is harmful or not, along with some potential pesticides or alternatives they could use. This way, the farmers will be able to save money invested in trying to ward away bugs that appear to be pests but are not.  
 
 ## How we built it
 - HTML5
@@ -23,10 +25,13 @@ This is where the Debug application comes into play. Using Debug, farmers are ab
 ## Challenges we ran into
 
 ## Accomplishments that we're proud of
+We are  proud to have implemented an image classification model to real world applications such as the ongoing food crisis and the overuse of pesticides in a short amount of time. All of us applied our strengths and learned lots of new skills along the way!
 
 ## What we learned
+This was the first time many of us have attempted machine learning, so we learned a lot about model training, how to incorporate datasets, and integrate it into a user-friendly platform. 
 
 ## What's next for Debug
+We are planning to expand our database of bugs, and make a mobile version. 
 
 ## Contributors
 Debug was created between June 5th and 7th, 2020 during the "Hack the Northeast" hackathon. 

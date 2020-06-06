@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <title>Debug</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Use the power of Machine Learning to diagnose TB from chest x-rays.">
+    <meta name="description" content="Use the power of Machine Learning to determine the usefulness of pests.">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
     <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="img/Favicon2.png">
     <link rel="stylesheet" href="styles.css">
@@ -50,15 +51,18 @@
     <main role="main" class="container mt-5">
         <div class="row">
             <div class="col-12">
-                <div class="progress progress-bar progress-bar-striped progress-bar-animated mb-2">Loading Model</div>
+                <div class="progress progress-bar progress-bar-striped progress-bar-animated mb-2" style="height: 40px"><span id="progress-text"><h6>Loading Model</h6></span></div>
             </div>
         </div>
         <div class="row">
             <div class="col-6 upload-btn-wrapper">
-                <input id="image-selector" class="form-control border-0" type="file">
+                <label class="custom-file-upload">
+                <span id="upload-pic">Upload Picture</span>
+                    <input id="image-selector" class="form-control border-0" type="file">
+                </label>
             </div>
             <div class="col-6">
-                <button id="predict-button" class="btn btn-primary float-right">Predict</button>
+                    <button id="predict-button" class="btn btn-success float-right">Predict</button>
             </div>
         </div>
         <hr>

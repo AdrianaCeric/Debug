@@ -6,3 +6,50 @@
 .navbar-custom { 
     background-color: #5E8A2E; 
 } 
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+    border: black;
+    border-radius: 20px;
+    background: #5E8A2E;
+    padding: 15px;
+    width: 520px;
+    height: 70px;
+}
+
+.btn {
+    background-color: #5E8A2E;
+    border-radius: 90px;
+    border: 3px solid #CEEC17;
+}
+
+.progress-bar {
+    background-color: #CEEC17;
+    border-radius: 60px;
+}
+
+#progress-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #5E8A2E;
+    margin-top: 6px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 3px solid #CEEC17;
+    background-color: #5E8A2E;
+    display: inline-block;
+    border-radius: 60px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+#upload-pic {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}

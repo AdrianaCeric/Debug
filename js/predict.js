@@ -11,22 +11,22 @@ $(function() {
         reader.readAsDataURL(file);
     });
 
-    classifier = ml5.imageClassifier("/js/model/model.json", function() {
+    var classifier = ml5.imageClassifier("/js/model/model.json", function() {
         $(".progress").hide();
 
 
         $("#predict-button").click(function() {
             $(".progress").show();
             $("#progress-text").html("<h5>Attempting to classify...</h5>");
-            classifier.classify(document.getElementById("selected-image"), function(err, result) {
-                console.log(result)
+            classifier.classify(document.getElementById("selected-image"), 4, function(err, result) {
+                console.log(result);
                 $(".progress").hide();
                 if (err) {
                     console.log(err);
                 } else {
                     var bug = result[0].label;
                     $("#prediction-list").html(bug);
-                    /*
+
                     if (result[0].confidence >= 0.4) {
                         //YAY WE FOUND SOMETHING
 
@@ -39,7 +39,7 @@ $(function() {
                         var bug = false;
                         $("#prediction-list").html("Classification failed!");
                     }
-                    */
+
                 }
 
 

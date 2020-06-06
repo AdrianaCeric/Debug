@@ -61,3 +61,16 @@ input[type="file"] {
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
+
+
+/* Code for about.html */
+
+#about-us-title-area {
+    min-height: 10vh;
+    margin-top: 100px;
+}
+
+.main-title-1 {
+    font-size: 30px;
+    color: #5E8A2E;
+}

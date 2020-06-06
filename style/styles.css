@@ -65,12 +65,20 @@ input[type="file"] {
 
 /* Code for about.html */
 
-#about-us-title-area {
-    min-height: 10vh;
-    margin-top: 100px;
-}
-
 .main-title-1 {
     font-size: 30px;
     color: #5E8A2E;
+}
+
+.banner-area {
+    font-family: "Playfair Display", serif;
+    color: white;
+    height: 100vh;
+    min-height: 500px;
+    background-color: #f4f4f4;
+    padding-top: calc(30vh + 75px);
+}
+
+.about-text-area {
+    min-height: 100vh;
 }

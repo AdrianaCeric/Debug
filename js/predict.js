@@ -1,4 +1,5 @@
-$(function() {
+var url = "https://teachablemachine.withgoogle.com/models/bqQRqQbDO/"
+$(async function() {
     $("#image-selector").change(function() {
         let reader = new FileReader();
         reader.onload = function() {
@@ -11,46 +12,73 @@ $(function() {
         reader.readAsDataURL(file);
     });
 
-    var classifier = ml5.imageClassifier("/js/model/model.json", function() {
-        $(".progress").hide();
 
+    model = await tmImage.load(url + "model.json", url + "metadata.json")
+    maxPredictions = model.getTotalClasses();
 
-        $("#predict-button").click(function() {
-            $(".progress").show();
-            $("#progress-text").html("<h5>Attempting to classify...</h5>");
-            classifier.classify(document.getElementById("selected-image"), 4, function(err, result) {
-                console.log(result);
-                $(".progress").hide();
-                if (err) {
-                    console.log(err);
-                } else {
-                    var bug = result[0].label;
-                    $("#prediction-list").html(bug);
+    $("#predict-button").click(async function() {
+        var prediction = await model.predict(document.getElementById("selected-image"));
+        console.log(prediction)
+        for (let i = 0; i < prediction.length; i++) {
 
-                    if (result[0].confidence >= 0.4) {
-                        //YAY WE FOUND SOMETHING
+            if (prediction[string(i)].probability > 0.6) {
+                $("#prediction-list").html(prediction[i].label);
+            }
 
-                        var bug = result[0].label;
-                        $("#prediction-list").html(bug);
-
-
-                    } else {
-                        //NO MATCH DETECTED
-                        var bug = false;
-                        $("#prediction-list").html("Classification failed!");
-                    }
-
-                }
+        }
 
 
 
-            })
-
-        })
 
     })
 
+
+
+
 })
+
+
+
+// var classifier = ml5.imageClassifier("/js/model/model.json", function() {
+//     $(".progress").hide();
+
+
+//     $("#predict-button").click(function() {
+//         $(".progress").show();
+//         $("#progress-text").html("<h5>Attempting to classify...</h5>");
+//         classifier.classify(document.getElementById("selected-image"), 4, function(err, result) {
+//             console.log(result);
+//             $(".progress").hide();
+//             if (err) {
+//                 console.log(err);
+//             } else {
+//                 var bug = result[0].label;
+//                 $("#prediction-list").html(bug);
+
+//                 if (result[0].confidence >= 0.4) {
+//                     //YAY WE FOUND SOMETHING
+
+//                     var bug = result[0].label;
+//                     $("#prediction-list").html(bug);
+
+
+//                 } else {
+//                     //NO MATCH DETECTED
+//                     var bug = false;
+//                     $("#prediction-list").html("Classification failed!");
+//                 }
+
+//             }
+
+
+
+//         })
+
+//     })
+
+// })
+
+
 
 
 // $("#image-selector").change(function() {

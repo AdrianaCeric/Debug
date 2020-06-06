@@ -160,3 +160,22 @@ input[type="file"] {
         margin-top: 30px;
     }
 }
+
+/* Code for pesticides.html banner */
+.heading-area {
+    color: black;
+    height: 100vh;
+    min-height: 500px;
+    background-image: url(../img/pesticides-banner-image.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+.heading-sub-area {
+    min-height: 500px;
+    height: 100vh;
+    padding-top: calc(30vh + 75px);
+    background: rgba(0, 0, 0, 0.2);
+}

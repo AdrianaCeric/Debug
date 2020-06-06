@@ -15,8 +15,9 @@ body {
     color: red;
 }
 
-.container img {
+.bugimg {
     width: 100%;
+    border-radius: 20px;
 }
 
 
@@ -51,6 +52,16 @@ body {
     background-image: url(../img/menu-icon-active.png);
     height: 35px;
     width: 35px;
+}
+
+.picholder {
+    max-width: 50%!important;
+}
+
+@media (max-width: 1200px) {
+    .picholder {
+        max-width: 70%!important;
+    }
 }
 
 
@@ -128,8 +139,8 @@ input[type="file"] {
 }
 
 .image-container {
-    width: 260px;
-    height: 320px;
+    /* width: 260px;
+    height: 320px; */
     border: 5px solid #689A32;
     box-sizing: border-box;
     border-radius: 20px;
@@ -144,6 +155,13 @@ input[type="file"] {
     font-family: 'Montserrat', sans-serif;
 }
 
+.confirmation-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: -20px;
+}
+
 .main-body-title-1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 27px;
@@ -152,6 +170,10 @@ input[type="file"] {
 }
 
 #prediction-list {
+    font-size: 18px;
+}
+
+#explanation-list {
     font-size: 18px;
 }
 
@@ -195,6 +217,7 @@ input[type="file"] {
     width: 70px;
     height: 70px;
     margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 .center {
@@ -233,4 +256,6 @@ input[type="file"] {
     background: rgba(0, 0, 0, 0.2);
 }
 
-,
+#prediction-list {
+    font-size: 18px;
+}

@@ -24,7 +24,17 @@ $(async function() {
             console.log(prediction[i.toString()])
             if (prediction[i.toString()].probability > 0.6) {
                 console.log("ITS THISSSS")
-                $("#prediction-list").html(prediction[i.toString()].className + "<br>Accuracy:" + prediction[i.toString()].probability * 100 + "%");
+                    //laeh
+                if (prediction[i.toString()].probability.toString().charAt(0) == "L") {
+                    setP("Locust (Schistocerca gregaria) - Harmful");
+                } else if (prediction[i.toString()].probability.toString().charAt(0) == "A") {
+                    setP("Armyworm (Spodoptera frugiperda) - Harmful");
+                } else if (prediction[i.toString()].probability.toString().charAt(0) == "E") {
+                    setP("Earwig (Dermaptera) - Beneficial");
+                } else {
+                    setP("Honeybee (Apis mellifera) - Beneficial");
+                }
+                //$("#prediction-list").html(prediction[i.toString()].className + "<br>Accuracy:" + prediction[i.toString()].probability * 100 + "%");
             }
 
         }
@@ -39,7 +49,9 @@ $(async function() {
 
 })
 
-
+function setP(a) {
+    $("#prediction-list").html(a);
+}
 
 // var classifier = ml5.imageClassifier("/js/model/model.json", function() {
 //     $(".progress").hide();

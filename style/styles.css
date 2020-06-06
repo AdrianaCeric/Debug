@@ -20,8 +20,19 @@ body {
 }
 
 .navbar-custom li {
-    
+    list-style-type: none;
+    margin-right: 10px;
 }
+
+.navbar-custom .active {
+    list-style-type: none;
+    text-decoration: underline;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url(../img/menu-icon.png);
+}
+
 
 /*code for index.html */
 
@@ -73,13 +84,17 @@ input[type="file"] {
     color: white;
 }
 
+.predictbutton {
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 /* Code for about.html */
 
 .main-title-1 {
     color: black;
     font-family: "Montserrat", sans-serif;
-    font-size: 30px;
+    font-size: 60px;
     font-weight: 400;
 }
 
@@ -104,7 +119,7 @@ input[type="file"] {
 .about-text-area {
     padding-top: 10px;
     min-height: 100vh;
-    font-size: 14px;
+    font-size: 30px;
     font-weight: 300;
     font-family: "Montserrat", sans-serif;
 }
@@ -129,3 +144,6 @@ input[type="file"] {
         margin-top: 30px;
     }
 }
+
+list-style-type: none;
+-

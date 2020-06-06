@@ -11,7 +11,7 @@ $(function() {
         reader.readAsDataURL(file);
     });
 
-    classifier = ml5.imageClassifier("put the link here", function() {
+    classifier = ml5.imageClassifier("https://storage.googleapis.com/tm-model/bqQRqQbDO/model.json", function() {
 
 
 

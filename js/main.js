@@ -1,4 +1,5 @@
 //code for navbar background image
+
 var active = false;
 var button = document.getElementsByClassName('navbar-toggler-icon')[0];
 

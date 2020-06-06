@@ -24,7 +24,7 @@ $(async function() {
             console.log(prediction[i.toString()])
             if (prediction[i.toString()].probability > 0.6) {
                 console.log("ITS THISSSS")
-                $("#prediction-list").html(prediction[i.toString()].className);
+                $("#prediction-list").html(prediction[i.toString()].className + "<br>Accuracy:" + prediction[i.toString()].probability * 100 + "%");
             }
 
         }

@@ -8,11 +8,22 @@ body {
 }
 
 
-/* Modify the backgorund color */
+/* code for navbar */
 
 .navbar-custom {
     background-color: #5E8A2E;
 }
+
+.navbar-custom a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-custom li {
+    
+}
+
+/*code for index.html */
 
 h1,
 h2 {
@@ -66,16 +77,16 @@ input[type="file"] {
 /* Code for about.html */
 
 .main-title-1 {
+    color: black;
+    font-family: "Montserrat", sans-serif;
     font-size: 30px;
-    color: #5E8A2E;
+    font-weight: 400;
 }
 
 .banner-area {
-    font-family: "Playfair Display", serif;
-    color: white;
+    color: black;
     height: 100vh;
     min-height: 500px;
-    padding-top: calc(30vh + 75px);
     background-image: url(../img/about-banner-image.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -83,7 +94,15 @@ input[type="file"] {
     background-size: cover;
 }
 
+.banner-sub-area {
+    min-height: 500px;
+    height: 100vh;
+    padding-top: calc(30vh + 75px);
+    background: rgba(100, 100, 100, 0.2);
+}
+
 .about-text-area {
+    padding-top: 10px;
     min-height: 100vh;
     font-size: 14px;
     font-weight: 300;

@@ -18,7 +18,10 @@ $(async function() {
     maxPredictions = model.getTotalClasses();
 
     $("#predict-button").click(async function() {
+
+        $(".progress").html("<h5>Classifying bug...</h5>");
         var prediction = await model.predict(document.getElementById("selected-image"));
+
         console.log(prediction)
         for (let i = 0; i < prediction.length; i++) {
             console.log(prediction[i.toString()])
@@ -26,13 +29,13 @@ $(async function() {
                 console.log("ITS THISSSS")
                     //laeh
                 if (prediction[i.toString()].probability.toString().charAt(0) == "L") {
-                    setP("Locust (Schistocerca gregaria) - Harmful");
+                    setP("Locust (Schistocerca gregaria) - Harmful", false);
                 } else if (prediction[i.toString()].probability.toString().charAt(0) == "A") {
-                    setP("Armyworm (Spodoptera frugiperda) - Harmful");
+                    setP("Armyworm (Spodoptera frugiperda) - Harmful", false);
                 } else if (prediction[i.toString()].probability.toString().charAt(0) == "E") {
-                    setP("Earwig (Dermaptera) - Beneficial");
+                    setP("Earwig (Dermaptera) - Beneficial", true);
                 } else {
-                    setP("Honeybee (Apis mellifera) - Beneficial");
+                    setP("Honeybee (Apis mellifera) - Beneficial", true);
                 }
                 //$("#prediction-list").html(prediction[i.toString()].className + "<br>Accuracy:" + prediction[i.toString()].probability * 100 + "%");
             }
@@ -49,8 +52,15 @@ $(async function() {
 
 })
 
-function setP(a) {
+function setP(a, isgood) {
     $("#prediction-list").html(a);
+    if (isgood) {
+        $("#prediction-list").addClass("good")
+        $("#prediction-list").removeClass("bad")
+    } else {
+        $("#prediction-list").addClass("bad")
+        $("#prediction-list").removeClass("good")
+    }
 }
 
 // var classifier = ml5.imageClassifier("/js/model/model.json", function() {

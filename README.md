@@ -14,3 +14,12 @@ This is where the Debug application comes into play. Using Debug, farmers are ab
 ## What we learned
 
 ## What's next for Debug
+
+## Contributors
+Debug was created between June 5th and 7th, 2020 during the "Hack the Northeast" hackathon. 
+
+Contributors: 
+- Daniel Noguera: https://github.com/DanielNogueraDevelopment
+- Ujjanidas: https://github.com/ujjainidas
+- Dhruv Rawat: https://github.com/Pop0097
+- Adriana Ceric (owner of this repository): https://github.com/AdrianaCeric

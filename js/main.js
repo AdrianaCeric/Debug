@@ -1,14 +1,15 @@
-//code for navbar background image
+//code for navbar toggler background image
 
 var active = false;
-var button = document.getElementsByClassName('navbar-toggler-icon')[0];
+var button = document.getElementsByClassName('navbar-toggler')[0];
+var element = document.getElementsByClassName('navbar-toggler-icon')[0];
 
 button.addEventListener("click", function() {
     if (active) {
-        button.style.backgroundImage = 'url(img/menu-icon-inactive.png)';
+        element.style.backgroundImage = 'url(img/menu-icon-inactive.png)';
         active = false;
     } else {
-        button.style.backgroundImage = 'url(img/menu-icon-active.png)';
+        element.style.backgroundImage = 'url(img/menu-icon-active.png)';
         active = true;
     }
 });

@@ -52,23 +52,55 @@ body {
 
 /*code for index.html */
 
-h1,
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
+.banner-area-2 {
+    color: black;
+    height: 100vh;
+    min-height: 500px;
+    background-image: url(../img/index-banner-image.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sub-title-3 {
+    font-size: 20px;
     color: white;
-    border: black;
-    border-radius: 20px;
-    background: #5E8A2E;
-    padding: 15px;
-    width: 520px;
-    height: 70px;
+    font-weight: 300;
+}
+
+.instruction-area {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.uploading-area {
+    padding: 20px;
+}
+
+input[type="file"] {
+    display: none;
 }
 
 .btn {
     background-color: #5E8A2E;
     border-radius: 90px;
     border: 3px solid #CEEC17;
+}
+
+.custom-file-upload {
+    border: 3px solid #CEEC17;
+    background-color: #5E8A2E;
+    display: inline-block;
+    border-radius: 60px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.progress-bar-wrapper {
+    margin-bottom: 20px;
 }
 
 .progress-bar {
@@ -82,26 +114,43 @@ h2 {
     margin-top: 6px;
 }
 
-input[type="file"] {
-    display: none;
+.upload-btn-wrapper {
+    margin-bottom: 30px;
 }
 
-.custom-file-upload {
-    border: 3px solid #CEEC17;
-    background-color: #5E8A2E;
-    display: inline-block;
-    border-radius: 60px;
-    padding: 6px 12px;
-    cursor: pointer;
+.image-container {
+    width: 260px;
+    height: 320px;
+    border: 5px solid #689A32;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.predict-btn-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.predictbutton {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+    border: black;
+    border-radius: 20px;
+    background: #5E8A2E;
+    padding: 15px;
+    width: 520px;
+    height: 70px;
 }
 
 #upload-pic {
     font-family: 'Montserrat', sans-serif;
     color: white;
-}
-
-.predictbutton {
-    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -161,7 +210,9 @@ input[type="file"] {
     }
 }
 
+
 /* Code for pesticides.html banner */
+
 .heading-area {
     color: black;
     height: 100vh;
@@ -172,7 +223,7 @@ input[type="file"] {
     background-repeat: no-repeat;
     background-size: cover;
 }
- 
+
 .heading-sub-area {
     min-height: 500px;
     height: 100vh;

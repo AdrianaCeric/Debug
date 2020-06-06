@@ -20,6 +20,6 @@ Debug was created between June 5th and 7th, 2020 during the "Hack the Northeast"
 
 Contributors: 
 - Daniel Noguera: https://github.com/DanielNogueraDevelopment
-- Ujjanidas: https://github.com/ujjainidas
+- Ujjani Das: https://github.com/ujjainidas
 - Dhruv Rawat: https://github.com/Pop0097
 - Adriana Ceric (owner of this repository): https://github.com/AdrianaCeric

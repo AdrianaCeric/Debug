@@ -75,10 +75,38 @@ input[type="file"] {
     color: white;
     height: 100vh;
     min-height: 500px;
-    background-color: #f4f4f4;
     padding-top: calc(30vh + 75px);
+    background-image: url(../img/about-banner-image.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about-text-area {
     min-height: 100vh;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about-image {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 50px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .about-text-area {
+        padding: 20px;
+    }
+    .about-image {
+        margin-top: 30px;
+    }
 }

@@ -14,15 +14,17 @@ $(async function() {
 
 
     model = await tmImage.load(url + "model.json", url + "metadata.json")
+    $(".progress").hide();
     maxPredictions = model.getTotalClasses();
 
     $("#predict-button").click(async function() {
         var prediction = await model.predict(document.getElementById("selected-image"));
         console.log(prediction)
         for (let i = 0; i < prediction.length; i++) {
-
-            if (prediction[string(i)].probability > 0.6) {
-                $("#prediction-list").html(prediction[i].label);
+            console.log(prediction[i.toString()])
+            if (prediction[i.toString()].probability > 0.6) {
+                console.log("ITS THISSSS")
+                $("#prediction-list").html(prediction[i.toString()].className);
             }
 
         }

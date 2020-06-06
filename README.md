@@ -23,6 +23,7 @@ This is where the Debug application comes into play. Using Debug, farmers are ab
 - [Tensorflow.js](https://www.tensorflow.org/js)
 
 ## Challenges we ran into
+The most challenging component of this project was definitely the machine learning aspect. There were many image Javascript libraries out there that we could use, so it took time to find the best fit for this application, which turned out to be TensorFlow. Overall, many of our issues were quickly solved as each of us had varied skills and open minds. 
 
 ## Accomplishments that we're proud of
 We are  proud to have implemented an image classification model to real world applications such as the ongoing food crisis and the overuse of pesticides in a short amount of time. All of us applied our strengths and learned lots of new skills along the way!

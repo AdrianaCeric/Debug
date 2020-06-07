@@ -1,0 +1,258 @@
+#nav-logo {
+    width: 200px;
+}
+
+body {
+    padding-top: 70px;
+    overflow-x: hidden;
+}
+
+.good {
+    color: green;
+}
+
+.bad {
+    color: red;
+}
+
+.bugimg {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* code for navbar */
+
+.navbar-custom {
+    background-color: #5E8A2E;
+}
+
+.navbar-custom a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-custom li {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.navbar-custom .active {
+    list-style-type: none;
+    text-decoration: underline;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url(../img/menu-icon-inactive.png);
+    height: 35px;
+    width: 35px;
+}
+
+.navbar-custom .navbar-toggler-icon:pressed {
+    background-image: url(../img/menu-icon-active.png);
+    height: 35px;
+    width: 35px;
+}
+
+.picholder {
+    max-width: 50%!important;
+}
+
+@media (max-width: 762px) {
+    .picholder {
+        max-width: 60%!important;
+    }
+}
+
+
+/*code for index.html */
+
+.banner-area-2 {
+    color: black;
+    height: 100vh;
+    min-height: 500px;
+    background-image: url(../img/index-banner-image.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sub-title-3 {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.instruction-area {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.uploading-area {
+    padding: 20px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.btn {
+    background-color: #5E8A2E;
+    border-radius: 90px;
+    border: 3px solid #CEEC17;
+}
+
+.progress-bar-wrapper {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: #CEEC17;
+    border-radius: 60px;
+}
+
+#progress-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #5E8A2E;
+    margin-top: 6px;
+}
+
+.upload-btn-wrapper {
+    margin-bottom: 30px;
+}
+
+#upload-pic {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.custom-file-upload {
+    border: 3px solid #CEEC17;
+    background-color: #5E8A2E;
+    display: inline-block;
+    border-radius: 60px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.image-container {
+    /* width: 260px;
+    height: 320px; */
+    border: 5px solid #689A32;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.predict-btn-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.predictbutton {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-body-title-1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27px;
+    color: #5E8A2E;
+    margin-bottom: 10px;
+}
+
+#prediction-list {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#explanation-list {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+
+/* Code for about.html */
+
+.main-title-1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.banner-area {
+    color: black;
+    height: 100vh;
+    min-height: 500px;
+    background-image: url(../img/about-banner-image.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-sub-area {
+    min-height: 500px;
+    height: 100vh;
+    padding-top: calc(30vh + 110px);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.about-text-area {
+    padding-top: 10px;
+    min-height: 100vh;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about-image {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .about-text-area {
+        padding: 20px;
+    }
+    .about-image {
+        margin-top: 30px;
+    }
+}
+
+
+/* Code for pesticides.html banner */
+
+.heading-area {
+    color: black;
+    height: 100vh;
+    min-height: 500px;
+    background-image: url(../img/pesticides-banner-image.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading-sub-area {
+    min-height: 500px;
+    height: 100vh;
+    padding-top: calc(30vh + 75px);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#prediction-list {
+    font-size: 18px;
+}

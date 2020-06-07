@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Debug - About Pesticides</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Use the power of Machine Learning to determine the usefulness of pests.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="img/Favicon2.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-custom navbar-expand-md fixed-top ">
+        <a class="navbar-brand" href="index.html"><img src="img/DebugLogo.png" id="nav-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <li>
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li>
+                <a class="active nav-link" href="pesticides.html">Info on Pesticides</a>
+            </li>
+        </div>
+    </nav>
+
+    <section class="heading-area">
+        <div class="heading-sub-area">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <h3 class="main-title-1" style="color:white;">About Pesticides</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-text-area">
+        <div class="container" style="height:100%;">
+            <div class="row" style="min-height:100vh; height:100%;">
+                <div class="col-12 my-auto">
+                    <img src="img/Favicon1.png" class="center about-image">
+                    <p>
+                        After using Debug to identify the type of pests found in your crops, we have provided you recommended courses of action to maximize crop yield and prevent harm to beneficial insects.
+                    </p>
+                    <p>
+                        <b>Beneficial pests: </b>
+                    </p>
+                    <ul>
+                        <li>
+                            These include <b>honeybees</b> and <b>earwigs</b>.
+                        </li>
+                        <li>
+                            Pollinators are critical for crop growth! If you have identified <b>honeybees</b> in your field, <b>solutions, emulsifiable concentrates, and granulars</b> are the best formulates to use. These are non-toxic to bees.
+                        </li>
+                        <li>
+                            Using more <b>degradable pesticides</b> will prevent a powdery, toxic residue. This both protects beneficial insects and prevents environmental damage.
+                        </li>
+                        <li>
+                            Honeybees are killed most predominantly due to aerial applications of pesticides. <b>Do not spray pesticides during windy days</b>, and utilize equipment that contains the sprayed pesticide into a confined area.
+                        </li>
+                        <li>
+                            With honeybees in your field, it is recommended that you apply pesticides in the <b>evening</b>, as bees forage usually during daylight hours.
+                        </li>
+                        <li>
+                            <b>Earwigs</b> can be both harmful and beneficial to your fields. They do ravage on aphids, mites, nematodes, and other plant-damaging insects in your crops. However, they will also eat plants, ornamental leaves, and roots.
+                        </li>
+                        <li>
+                            If you see earwigs in your fields, rather than using pesticides, <b>clear your crops</b> of dead leaves, twigs, and other debris. Use gravel insteal of mulch, as it has less moisture.
+                        </li>
+                    </ul>
+                    <p>
+                        <b>Harmful pests:</b>
+                    </p>
+                    <ul>
+                        <li>
+                            These include <b>armyworms</b> and <b>locusts</b>.
+                        </li>
+                        <li>
+                            If you identify <b>armyworms</b> in your fields, <b>avoid using harmful chemicals that would inadvertently destroy beneficial insects</b>.
+                        </li>
+                        <li>
+                            Instead, utilize pheromone traps to monitor the presence of new insects.
+                        </li>
+                        <li>
+                            <b>Releasing trichogramma wasps</b> into your fields may help rid your field of newly laid armyworm eggs.
+                        </li>
+                        <li>
+                            <b>Locusts</b> can be controlled with the <b>removal or forests and other blockades</b> that may serve to increase population density.
+                        </li>
+                        <li>
+                            Although harmful to crops, locusts are deemed by scientists to be important parts of ecosystems.
+                        </li>
+                        <li>
+                            <b>Overgrazing</b> fields leads to increased locust growth, and limitations of these factors can reduce the locust populations in your fields.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

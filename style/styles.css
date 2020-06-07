@@ -87,7 +87,7 @@ body {
 .instruction-area {
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
 }
 
@@ -155,12 +155,6 @@ input[type="file"] {
     font-family: 'Montserrat', sans-serif;
 }
 
-.confirmation-text p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-}
-
 .main-body-title-1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 27px;
@@ -175,7 +169,7 @@ input[type="file"] {
 }
 
 #explanation-list {
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
@@ -211,7 +205,7 @@ input[type="file"] {
 .about-text-area {
     padding-top: 10px;
     min-height: 100vh;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     font-family: "Montserrat", sans-serif;
 }
@@ -262,5 +256,3 @@ input[type="file"] {
 #prediction-list {
     font-size: 18px;
 }
-
-font-weight: 300;

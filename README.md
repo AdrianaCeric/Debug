@@ -14,14 +14,16 @@ This is where the Debug application comes into play. Using Debug, farmers are ab
 
 ## How we built it
 - HTML5
-- [p5.js](https://p5js.org/)
-- [ml5.js](https://ml5js.org/)
+- CSS
+- JavaScript/JQuery
 - [Teachable Machine](https://teachablemachine.withgoogle.com/)
 - [ImageNet](http://www.image-net.org/index)
 - [Tensorflow.js](https://www.tensorflow.org/js)
 
 ## Challenges we ran into
-The most challenging component of this project was definitely the machine learning aspect. There were many image Javascript libraries out there that we could use, so it took time to find the best fit for this application, which turned out to be TensorFlow. Overall, many of our issues were quickly solved as each of us had varied skills and open minds. 
+The most challenging component of this project was definitely the machine learning aspect. There were many image Javascript libraries out there that we could use, so it took time to find the best fit for this application, which turned out to be TensorFlow. 
+Additoinally, adding the Drag and Drop feature to the website was a great challenge. There were many tutorials, but many of them contained bugs that rendered their suggestions useless. In fact, while implementing this code, the web application stopped working, requiring us to back track. Fortunately, with perseverance on our side, we eventually figured out how to implement the feature seamlessly into Debug.
+Overall, many of our issues were quickly solved as each of us had varied skills and open minds. 
 
 ## Accomplishments that we're proud of
 We are  proud to have implemented an image classification model to real world applications such as the ongoing food crisis and the overuse of pesticides in a short amount of time. All of us applied our strengths and learned lots of new skills along the way!
@@ -30,7 +32,7 @@ We are  proud to have implemented an image classification model to real world ap
 This was the first time many of us have attempted machine learning, so we learned a lot about model training, how to incorporate datasets, and integrate it into a user-friendly platform. 
 
 ## What's next for Debug
-We are planning to expand our database of bugs, and make a mobile version. 
+We are planning to expand our database of bugs and improve the machine learning model to improve the accuracy of the web application. We are also planning on making a mobile application for iOS and Android so the service is more convenient to use. 
 
 ## Contributors
 Debug was created between June 5th and 7th, 2020 during the "Hack the Northeast" hackathon. 

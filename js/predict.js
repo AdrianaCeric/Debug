@@ -14,34 +14,27 @@ upl.addEventListener("drop", function(event) {
         let dataURL = reader.result;
         $("#selected-image").attr("src", dataURL);
         $("#prediction-list").empty();
-        $(".predict").hide();
-        $(".confirmation-text").hide();
         $("#predict-button").show();
         $(".image-container").show();
-        $(".upload-btn-wrapper").hide()
-
+        $(".upload-btn-wrapper").show();
     }
 
     let file = $("#image-selector").prop('files')[0];
     reader.readAsDataURL(file);
+    $(".predict-btn-wrapper").show()
 })
-
-
-
-
-
 
 $(async function() {
     await $("#predict-button").hide();
     await $(".image-container").hide();
     $("#image-selector").change(function() {
-        $(".upload-btn-wrapper").hide();
+        // $(".upload-btn-wrapper").hide();
         let reader = new FileReader();
         reader.onload = function() {
             let dataURL = reader.result;
             $("#selected-image").attr("src", dataURL);
             $("#prediction-list").empty();
-            $(".predict").hide();
+
             $(".confirmation-text").hide();
             $("#predict-button").show();
             $(".image-container").show();
@@ -49,6 +42,7 @@ $(async function() {
 
         let file = $("#image-selector").prop('files')[0];
         reader.readAsDataURL(file);
+        $(".predict-btn-wrapper").show();
     });
 
 
@@ -88,12 +82,12 @@ $(async function() {
         if (fails == 4) {
             setP("Unable to identify. Please try again with another photo.", 3, "index.html", "index.html", "aaaaa");
         }
+        window.scrollTo(0, document.body.scrollHeight);
     })
 })
 
 
 function setP(a, isgood, link, eliminationLink, text) {
-    $(".confirmation-text").show();
     $(".upload-btn-wrapper").show();
     $("#prediction-list").html(a);
 

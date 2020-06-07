@@ -14,9 +14,11 @@ upl.addEventListener("drop", function(event) {
         let dataURL = reader.result;
         $("#selected-image").attr("src", dataURL);
         $("#prediction-list").empty();
+        $("#explanation-list").empty();
         $("#predict-button").show();
         $(".image-container").show();
         $(".upload-btn-wrapper").show();
+        $(".predict").hide();
     }
 
     let file = $("#image-selector").prop('files')[0];
@@ -34,10 +36,11 @@ $(async function() {
             let dataURL = reader.result;
             $("#selected-image").attr("src", dataURL);
             $("#prediction-list").empty();
-
+            $("#explanation-list").empty();
             $(".confirmation-text").hide();
             $("#predict-button").show();
             $(".image-container").show();
+            $(".predict").hide();
         }
 
         let file = $("#image-selector").prop('files')[0];

@@ -143,7 +143,7 @@ input[type="file"] {
     height: 320px; */
     border: 5px solid #689A32;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .predict-btn-wrapper {
@@ -155,11 +155,10 @@ input[type="file"] {
     font-family: 'Montserrat', sans-serif;
 }
 
-.confirmation-text {
+.confirmation-text p {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 300;
-    margin-bottom: -20px;
 }
 
 .main-body-title-1 {

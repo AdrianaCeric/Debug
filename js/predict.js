@@ -1,9 +1,41 @@
 var url = "https://teachablemachine.withgoogle.com/models/bqQRqQbDO/"
+
+
+var inp = document.getElementById("image-selector");
+var upl = document.getElementsByClassName("upload-btn-wrapper")[0];
+upl.addEventListener("dragover", function(event) {
+    event.preventDefault();
+})
+upl.addEventListener("drop", function(event) {
+    event.preventDefault();
+    inp.files = event.dataTransfer.files;
+    let reader = new FileReader();
+    reader.onload = function() {
+        let dataURL = reader.result;
+        $("#selected-image").attr("src", dataURL);
+        $("#prediction-list").empty();
+        $(".predict").hide();
+        $(".confirmation-text").hide();
+        $("#predict-button").show();
+        $(".image-container").show();
+        $(".upload-btn-wrapper").hide()
+
+    }
+
+    let file = $("#image-selector").prop('files')[0];
+    reader.readAsDataURL(file);
+})
+
+
+
+
+
+
 $(async function() {
     await $("#predict-button").hide();
     await $(".image-container").hide();
     $("#image-selector").change(function() {
-        $(".upload-btn-wrapper").hide()
+        $(".upload-btn-wrapper").hide();
         let reader = new FileReader();
         reader.onload = function() {
             let dataURL = reader.result;
@@ -61,8 +93,8 @@ $(async function() {
 
 
 function setP(a, isgood, link, eliminationLink, text) {
-    $(".confirmation-text").html('Your result can be found below');
     $(".confirmation-text").show();
+    $(".upload-btn-wrapper").show();
     $("#prediction-list").html(a);
 
     if (isgood == 2) {

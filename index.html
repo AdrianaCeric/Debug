@@ -95,26 +95,28 @@
                     </center>
                 </div>
                 <div class="col-12">
-                    <div class="image-container center">
-                        <img id="selected-image" class="ml-3" alt="">
+                    <div class="image-container center  picholder">
+                        <img id="selected-image" class="bugimg" alt="">
                     </div>
                 </div>
                 <div class="col-12 predict-btn-wrapper">
                     <center>
                         <button id="predict-button" class="btn btn-success"><span class="predict-button">Predict</span></button>
+                        <p class="confirmation-text " style="display: none; margin-top: 20px; "></p>
                     </center>
                 </div>
             </div>
-            <hr>
+            <hr class="predict" style="display:none; ">
         </div>
     </section>
 
     <section>
-        <div class="container predict" style="display: none;">
+        <div class="container predict " style="display: none; ">
             <div class="row">
                 <div class="col-12 identifier-wrapper text-center">
                     <h2 class="main-body-title-1">Prediction</h2><br>
-                    <h3 id="prediction-list"></h3>
+                    <p id="prediction-list"></p>
+                    <p id="explanation-list"></p>
                 </div>
             </div>
         </div>

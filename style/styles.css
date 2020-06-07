@@ -58,9 +58,9 @@ body {
     max-width: 50%!important;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 762px) {
     .picholder {
-        max-width: 70%!important;
+        max-width: 60%!important;
     }
 }
 
@@ -166,15 +166,19 @@ input[type="file"] {
     font-family: 'Montserrat', sans-serif;
     font-size: 27px;
     color: #5E8A2E;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 #prediction-list {
-    font-size: 18px;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 #explanation-list {
-    font-size: 18px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 
 
@@ -259,3 +263,5 @@ input[type="file"] {
 #prediction-list {
     font-size: 18px;
 }
+
+font-weight: 300;
